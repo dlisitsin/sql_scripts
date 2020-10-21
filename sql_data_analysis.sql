@@ -21,7 +21,7 @@ AND mobile_internet_media_consumption.media_login = panelists_info_base.media_lo
 SELECT ip_adress, device_id, gender, age, city_name, tv_count, hh_group, income
 FROM desktop_internet_media_consumption AS dim, panelists_info_base AS plst, mobile_internet_media_consumption AS mim
 WHERE dim.media_login = plst.media_login 
-AND mim.media_login = plst.media_login */ --ПСЕВДОНИМЫ ТАБЛИЦ
+AND mim.media_login = plst.media_login */ --ПСЕВДОНИМЫ ТАБЛИЦ 
 
 --САМООБЪЕДИНЕНИЕ:
 SELECT plst1.media_login, plst1.gender, plst1.age, plst1.city_name, plst1.tv_count, plst1.hh_group, plst1.income
