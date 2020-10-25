@@ -1,7 +1,7 @@
 SELECT audience, metric, operator, date1, value_counts, date2, order_numb 
 FROM bht1 
 WHERE order_numb > 3 AND (operator = 'МТС' OR order_numb = 2) AND date2 IN ('Май 2018', 'Июн 2018', 'Июл 2018', 'Авг 2018', 'Сен 2018', 'Окт 2018')
-ORDER BY value_counts DESC */ --НА СЛОЖНЫЕ УСЛОВИЯ И ИХ КОМБИНАЦИЮ, СО СПИСКОМ И СОРТИРОВКОЙ
+ORDER BY value_counts DESC */ --НА СЛОЖНЫЕ УСЛОВИЯ И ИХ КОМБИНАЦИЮ, СО СПИСКОМ И СОРТИРОВКОЙ 
 
 SELECT audience, metric, operator, date1, value_counts, date2, order_numb 
 FROM bht1 
