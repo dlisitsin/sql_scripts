@@ -1,6 +1,6 @@
 SELECT media_login, device_id, url, start_dt_time, end_dt_time, 
 (SELECT DISTINCT COUNT(*) FROM panelists_info_base WHERE gender = 'Female') AS females,	
-(SELECT DISTINCT COUNT(*) FROM panelists_info_base WHERE gender = 'Male') AS males
+(SELECT DISTINCT COUNT(*) FROM panelists_info_base WHERE gender = 'Male') AS males 
 FROM mobile_internet_media_consumption
 WHERE media_login IN (SELECT media_login FROM panelists_info_base WHERE gender = 'Female') */ --РАСЧЕТНЫЕ СТОЛБЦЫ ПО КОЛ-ВУ Ж И М,
 																							--С ВЫВОДОМ ТОЛЬКО ПО Ж
