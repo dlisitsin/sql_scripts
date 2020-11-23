@@ -6,7 +6,7 @@ ORDER BY value_counts DESC */ --НА СЛОЖНЫЕ УСЛОВИЯ И ИХ КО�
 SELECT audience, metric, operator, date1, value_counts, date2, order_numb 
 FROM bht1 
 WHERE order_numb > 3 AND operator LIKE '[^М]%' 
-ORDER BY value_counts DESC */ --НА УСЛОВИЯ И ОТБОР ПО ТИПУ РЕГУЛЯРНОГО ВЫРАЖЕНИЯ, С ПРИМЕНЕНИЕМ МЕТАСИМВОЛОВ
+ORDER BY value_counts DESC */ --НА УСЛОВИЯ И ОТБОР ПО ТИПУ РЕГУЛЯРНОГО ВЫРАЖЕНИЯ, С ПРИМЕНЕНИЕМ МЕТАСИМВОЛОВ 
 
 SELECT audience, metric, LOWER (operator) AS operator, date1, value_counts, date2, order_numb, order_numb * 2 AS order_numb_calc
 FROM bht1
