@@ -10,7 +10,7 @@ ORDER BY value_counts DESC */ --НА УСЛОВИЯ И ОТБОР ПО ТИПУ 
 
 SELECT audience, metric, LOWER (operator) AS operator, date1, value_counts, date2, order_numb, order_numb * 2 AS order_numb_calc
 FROM bht1
-WHERE order_numb > 2 */ --НА ВЫЧИСЛЯЕМЫЕ ПОЛЯ И ИХ ПЕРЕНАЗЫВАНИЯ
+WHERE order_numb > 2 */ --НА ВЫЧИСЛЯЕМЫЕ ПОЛЯ И ИХ ПЕРЕНАЗЫВАНИЯ 
 
 SELECT COUNT(DISTINCT order_numb), MAX(date2)
 FROM bht1 
